@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 40px;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 h1 {
@@ -15,7 +19,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
-    box-shadow: 10px 10px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
 label {
