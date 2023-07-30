@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style for the fixed navigation bar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    /* Style for navigation links */
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    /* Add some space below the navbar to see the effect of scrolling */
+    .content {
+      padding-top: 60px; /* Height of the fixed navbar */
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to MY website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu semper nulla. Nullam vehicula, libero sit amet congue tincidunt, ligula sapien eleifend ex, vel bibendum odio quam ut mi.</p>
+  </div>
+</body>
+</html>
