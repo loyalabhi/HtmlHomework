@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Elements</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .image {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .paragraph1 {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+    }
+
+    .paragraph2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="Desktop\ Wallpaper.png" alt="Image" class="image">
+    <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+    Itaque quas, asperiores libero inventore iure laborum hic eveniet error aut natus?</p>
+    <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+    Itaque quas, asperiores libero inventore iure laborum hic eveniet error aut natus?</p>
+  </div>
+</body>
+</html>
