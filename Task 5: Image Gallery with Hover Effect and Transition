@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery with Hover Effect</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: #f1f1f1;
+    }
+
+    .thumbnail {
+      position: relative;
+      width: 200px;
+      height: 150px;
+      overflow: hidden;
+      margin: 10px;
+      transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Hover effect */
+    .thumbnail:hover {
+      transform: scale(1.2); /* Scale up on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="thumbnail">
+    <img src="Desktop\ FSD_Homework\ image1.jpg" alt="Image 1">
+  </div>
+
+  <div class="thumbnail">
+    <img src="Desktop\ FSD_Homework\ image2.jpg" alt="Image 2">
+  </div>
+
+  <div class="thumbnail">
+    <img src="Desktop\ FSD_Homework\ image3.jpg" alt="Image 3">
+  </div>
+
+  <div class="thumbnail">
+    <img src="Desktop\ FSD_Homework\ image4.jpg" alt="Image 3">
+  </div>
+
+  <div class="thumbnail">
+    <img src="Desktop\ FSD_Homework\ image5.jpg" alt="Image 3">
+  </div>
+
+
+</body>
+</html>
