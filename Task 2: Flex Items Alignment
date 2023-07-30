@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      background-color: #f0f0f0;
+      padding: 0 20px;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+    }
+
+    main {
+      flex: 1;
+      min-height: 400px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      display: flex;
+      flex-direction: row; /* Align the boxes in a row */
+      justify-content: space-between; /* Equal space between boxes */
+      align-items: center;
+    }
+
+    /* Styles for the boxes */
+    .box {
+      flex: 1; /* Equal width for each box */
+      height: 100px;
+      margin: 0 5px; /* Space between the boxes */
+    }
+
+    .box1 {
+      background-color: #ff9999;
+    }
+
+    .box2 {
+      background-color: #99ff99;
+    }
+
+    .box3 {
+      background-color: #9999ff;
+    }
+
+    footer {
+      height: 60px;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </main>
+  <footer>
+    <p>© 2023 Your Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
